@@ -1,8 +1,15 @@
 <?php
-
+/*
+un controlador lo que hace es utilizar el modelo 
+que se haya creado antes 
+para poder hacer que un modelo haga lo que uno quiere de primero 
+hay que importar la clase del modelo y luego se puede hacer 
+referencia a esa clase como mas se me de la gana.
+*/
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Post;
 use App\Category;
 
@@ -22,6 +29,8 @@ class PruebasController extends Controller
 
     public function thesORM()
     {
+
+        //post:: all es como hacer un select * from 
 
         /*  $Posts = Post::all();
         //var_dump($Posts);

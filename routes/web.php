@@ -41,14 +41,20 @@ desde un formulario
 
 //rutas de prueba
 Route::get('usuario/pruebas', 'UserController@pruebas');
-Route::get('categoria/pruebas','CategoryController@pruebas');
-Route::get('entradas/pruebas','PostController@pruebas');
+Route::get('categoria/pruebas', 'CategoryController@pruebas');
+Route::get('entradas/pruebas', 'PostController@pruebas');
 //rutas oficiales del controlador de usuario
 
 //se hace la ruta por post porque es un dato que va a la db
 
+/*metodos http comunes
+*GET: CONSEGUIR DATOS O RECURSOS
+*POST: GUARDAR DATOS O RECURSOS O HACER LOGICAS DESDE UN FORMULARIO
+*PUT: ACTUALIZAR 
+*DELETE: ELIMINAR DATOS O RECUTSOS.
+*/
 Route::post('api/register', 'UserController@register');
-Route::post('api/login','UserController@login');
+Route::post('api/login', 'UserController@login');
 
 //como hacer un cliente resful
 //
